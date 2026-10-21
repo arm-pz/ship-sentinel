@@ -1,0 +1,36 @@
+{
+  "name": "ship-sentinel",
+  "displayName": "Ship Sentinel",
+  "version": "0.1.0",
+  "description": "Holds ship commands (git push, gh pr create, npm publish, deploys) until your pre-ship check skills have run since the last edit.",
+  "author": {
+    "name": "Abdul Rahman P Z"
+  },
+  "repository": "https://github.com/arm-pz/ship-sentinel",
+  "keywords": [
+    "mods",
+    "release",
+    "pre-ship",
+    "safety"
+  ],
+  "userConfig": {
+    "mode": {
+      "type": "string",
+      "title": "Mode",
+      "description": "ask: hold a ship command and ask whether to run the checks first. block: refuse until the checks have run. nudge: let it run and remind Claude afterwards. off: do nothing.",
+      "default": "ask",
+      "options": [
+        "ask",
+        "block",
+        "nudge",
+        "off"
+      ]
+    },
+    "required": {
+      "type": "string",
+      "title": "Required check skills",
+      "description": "Comma-separated names of the skills that count as pre-ship checks. All of them must have run since the last edit.",
+      "default": "release-gate"
+    }
+  }
+}

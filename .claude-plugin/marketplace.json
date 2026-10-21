@@ -1,0 +1,14 @@
+{
+  "name": "ship-sentinel",
+  "description": "Ship Sentinel: a Claude Code mod that holds ship commands until your pre-ship check skills have run since the last edit.",
+  "owner": {
+    "name": "Abdul Rahman P Z"
+  },
+  "plugins": [
+    {
+      "name": "ship-sentinel",
+      "source": "./",
+      "description": "Holds ship commands until your pre-ship check skills have run since the last edit."
+    }
+  ]
+}

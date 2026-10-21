@@ -1,0 +1,4 @@
+{
+  "description": "Ship Sentinel: holds ship commands until the pre-ship check skills have run since the last edit.",
+  "modules": ["./register.js"]
+}
